@@ -26,6 +26,6 @@ def trackbar():
             img[:] = 0
         else:
             img[:] = [b, g, r]
-    cv2.destoryAllWindows()
+        cv2.destoryAllWindows()
 
 trackbar()
