@@ -1,7 +1,7 @@
 import cv2
 
-fname_1 = "7_2_Grayscale_Image.jpg"
-fname_2 = "6_3_Bitwise_Operation_A.png"
+fname_1 = "6_3_Bitwise_Operation_A.png"
+fname_2 = "6_3_Image_Operation_B.jpg"
 
 img_1 = cv2.imread(fname_1)
 img_2 = cv2.imread(fname_2)
