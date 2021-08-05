@@ -2,8 +2,7 @@ import cv2
 import numpy as np
 
 def exponential_function(channel, exp):
-    table = np.array([min((i**exp), 255)
-    for i in np.arange(0, 255)]).astype("uint8")
+    table = np.array([min((i**exp), 255) for i in np.arange(0, 256)]).astype("uint8")
     channel = cv2.LUT(channel, table)
     return channel
 
