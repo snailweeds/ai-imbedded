@@ -10,7 +10,7 @@ f = np.fft.fft2(img)
 fshift = np.fft.fftshift(f)
 magnitude_spectrum = 20*np.log(np.abs(fshift))
 
-f[crow-30:crow+30, ccol-30:ccol+30] = 0
+fshift[crow-30:crow+30, ccol-30:ccol+30] = 0
 f_ishift = np.fft.ifftshift(fshift)
 img_back = np.fft.ifft2(f_ishift)
 img_back = np.abs(img_back)
